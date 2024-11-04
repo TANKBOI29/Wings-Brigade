@@ -1,0 +1,283 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #141414;
+    color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    padding: 1em 2em;
+    background: rgba(20, 20, 20, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.navbar .nav-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #00bfff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 20, 40, 0.8), rgba(0, 0, 0, 0.7)), url('images/formation.jpg') center/cover;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4em;
+    color: #00bfff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.cta-button {
+    padding: 1em 3em;
+    background: #00bfff;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section-border {
+    padding: 4em 2em;
+    margin: 2em 0;
+    background: #1e1e1e;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.section-border:hover {
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #ffcc00;
+    transform: scale(1.02);
+}
+
+h2 {
+    font-size: 2em;
+    color: #00bfff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    border: 2px solid #ffcc00;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00bfff;
+}
+
+/* Footer */
+footer {
+    background: #202020;
+    color: #999;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+
+/* Existing Styles Here */
+
+.section-border {
+    padding: 4em 2em;
+    margin: 2em 0;
+    background: #1e1e1e;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.section-border:hover {
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+/* Additional styles for consistency across pages */
+h2 {
+    font-size: 2em;
+    color: #00bfff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+footer {
+    background: #202020;
+    color: #999;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+/* Button Styles */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Staff Section Styling */
+.staff {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.staff img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.command-section {
+    margin-bottom: 20px;
+}
+/* Center-align all section text */
+.section-border, .hero, .command-section, footer {
+    text-align: center;
+}
+
+/* Center navbar links */
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+/* Adjust the hero image and title */
+.hero img.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+/* Adjust gallery images */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+/* Center staff image and text within each entry */
+.staff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.staff img {
+    margin: 0 15px;
+}
+
+/* Center buttons */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
